@@ -1,68 +1,83 @@
-Catálogo de Livros
+# Catálogo de Livros
 
 Projeto desenvolvido para praticar a criação de uma API com Python e Flask e o consumo dessa API utilizando React.
 
 A aplicação permite buscar livros através de uma API e exibir suas informações em uma página web.
 
-Tecnologias utilizadas
+## Tecnologias utilizadas
 
-Backend:
+**Backend**
+- Python
+- Flask
 
-Python
+**Frontend**
+- React
+- JavaScript
+- Vite
 
-Flask
+## Funcionalidades
 
-Frontend:
+- Buscar livros através da API.
+- Exibir título, autor, ano e ID de cada livro.
+- Mostrar mensagem durante o carregamento.
+- Informar quando ocorre algum erro na requisição.
 
-React
+## Como executar
 
-JavaScript
+### Backend
 
-Vite
+Entre na pasta `backend`:
 
-Funcionalidades
+```bash
+cd backend
+```
 
-Buscar livros através da API.
+Crie um ambiente virtual:
 
-Exibir título, autor, ano e ID de cada livro.
-
-Mostrar mensagem durante o carregamento.
-
-Informar quando ocorre algum erro na requisição.
-
-Como executar
-
-Backend
-
-Entre na pasta backend e execute:
-
+```bash
 python -m venv venv
+```
 
 Ative o ambiente virtual no Windows:
 
+```powershell
 .\venv\Scripts\Activate.ps1
+```
 
 Instale as dependências:
 
+```bash
 pip install -r requirements.txt
+```
 
 Inicie a API:
 
+```bash
 python app.py
+```
 
-A API estará disponível em http://127.0.0.1:5000.
+A API estará disponível em `http://127.0.0.1:5000`.
 
-Frontend
+### Frontend
 
-Abra outro terminal, entre na pasta frontend e execute:
+Abra outro terminal e entre na pasta `frontend`:
 
+```bash
+cd frontend
+```
+
+Instale as dependências:
+
+```bash
 npm install
+```
+
+Inicie o servidor:
+
+```bash
 npm run dev
+```
 
-Acesse o endereço informado pelo Vite, normalmente http://localhost:5173.
+Acesse o endereço informado pelo Vite, normalmente `http://localhost:5173`.
 
-É necessário manter o backend e o frontend em execução ao mesmo tempo para que a aplicação funcione corretamente.
-
-Objetivo
-
-O objetivo do projeto é praticar a integração entre frontend e backend, além de aprender a trabalhar com requisições HTTP, JSON e gerenciamento de estados no React.
+**Importante:** mantenha o
